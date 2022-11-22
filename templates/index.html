@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Light-controller</title>
+    </head>
+    <body style="background-color : gray">
+            <h1 class="text-center">Light-controller</h1>
+            <form action="/off" method="post">
+                <div class="d-grid gap-1 col-6 mx-auto">
+                    <button class="btn btn-dark m-3 hov" type="submit">Off</button>
+                </div>
+            </form>
+			<form action="/blue" method="post">
+                <div class="d-grid gap-1 col-6 mx-auto">
+                    <button class="btn btn-primary m-3 hov" type="submit">Blue</button>
+                </div>
+            </form>
+            <form action="/red" method="post">
+                <div class="d-grid gap-1 col-6 mx-auto">
+                    <button class="btn btn-danger m-3 hov" type="submit">Red</button>
+                </div>
+            </form>
+            <form action="/green" method="post">
+                <div class="d-grid gap-1 col-6 mx-auto">
+                    <button class="btn btn-success m-3 hov" type="submit">Green</button>
+                </div>
+            </form>
+            <form action="/white" method="post">
+                <div class="d-grid gap-1 col-6 mx-auto">
+                    <button class="btn btn-light m-3 hov" type="submit">White</button>
+                </div>
+            </form>		
+	    <form action="/yellow" method="post">
+                <div class="d-grid gap-1 col-6 mx-auto">
+                    <button class="btn btn-warning m-3" type="submit">Yellow</button>
+                </div>
+            </form>
+    </body>
+</html>
+
