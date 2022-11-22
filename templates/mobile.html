@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <title>Mobile page</title>
+        <style>
+            body{margin:40px;}
+
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn-circle.btn-xl {
+  width: 300px;
+  height: 300px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 910px;
+}
+.block {
+  display: block;
+  border: none;
+  background-color: {{ color }};
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+        </style>
+    </head>
+    <body style="background-color : gray">
+        <form action="/mobilegreen" method="post">
+            <div class="container">
+                <div class="center">
+                	<button type="submit" class="btn btn-circle btn-xl block"></button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
