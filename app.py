@@ -61,3 +61,10 @@ def mobilegreen():
     arduino.write("green".encode())
     time.sleep(2)
     return render_template("mobile.html",color="#00FF00")
+
+
+@app.route("/rainbow",methods=["POST"])
+def yellow():
+    arduino.write("rainbow".encode())
+    time.sleep(2)
+    return redirect("/")
