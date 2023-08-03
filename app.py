@@ -64,7 +64,7 @@ def mobilegreen():
 
 
 @app.route("/rainbow",methods=["POST"])
-def yellow():
+def rainbow():
     arduino.write("rainbow".encode())
     time.sleep(2)
     return redirect("/")
