@@ -68,3 +68,9 @@ def rainbow():
     arduino.write("rainbow".encode())
     time.sleep(2)
     return redirect("/")
+
+@app.route("/whiteflow",methods=["POST"])
+def whiteflow():
+    arduino.write("whiteflow".encode())
+    time.sleep(2)
+    return redirect("/")
