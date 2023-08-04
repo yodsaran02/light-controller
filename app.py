@@ -74,3 +74,9 @@ def whiteflow():
     arduino.write("whiteflow".encode())
     time.sleep(2)
     return redirect("/")
+
+@app.route("/blink",methods=["POST"])
+def blink():
+    arduino.write("blink".encode())
+    time.sleep(2)
+    return redirect("/")
